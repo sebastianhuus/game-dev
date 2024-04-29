@@ -1,6 +1,9 @@
 import { getActions, getBoard, getBombs, getFires } from "./game-state.js";
 
-export function makeAi() {
+var my_id;
+
+export function makeAi(id) {
+  my_id = id;
   return {
     get_action: get_action,
   };

@@ -193,7 +193,7 @@ export function populatePlayers() {
       isHuman: false,
       isAlive: true,
       id: nr,
-      agent: makeAi(),
+      agent: makeAi(nr),
       cd: Date.now()
     });
     board[y][x] = nr;

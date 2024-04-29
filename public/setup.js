@@ -44,7 +44,6 @@ function initAiButton() {
 
 export function initHumanControls() {
     document.onkeydown = ev => {
-        console.log(ev);
         if (playerActionQueued) return;
         if (ev.key=='ArrowLeft'){
             queueAction(1, actions.left);
